@@ -13,10 +13,6 @@ describe 'crane' do
       }
     end
 
-    let(:pre_condition) do
-      ['include certs']
-    end
-
     it { should contain_class('crane::install') }
     it { should contain_class('crane::config') }
   end

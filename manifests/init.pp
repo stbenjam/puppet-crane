@@ -10,11 +10,13 @@
 #
 # $ca_cert:: Path to the SSL CA cert for https
 #
+# $port::    Port for Crane to run on
+#
 class crane (
-  $key = $crane::params::key,
-  $cert = $crane::params::cert,
-  $ca_cert = $crane::params::ca_cert,
-
+  $key      = $crane::params::key,
+  $cert     = $crane::params::cert,
+  $ca_cert  = $crane::params::ca_cert,
+  $port     = $crane::params::port,
   ) inherits crane::params {
 
   class { '::crane::install': } ~>
