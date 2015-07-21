@@ -1,3 +1,5 @@
+[![Puppet Forge](http://img.shields.io/puppetforge/v/katello/crane.svg)](https://forge.puppetlabs.com/katello/crane)
+[![Build Status](https://travis-ci.org/Katello/puppet-crane.svg?branch=master)](https://travis-ci.org/Katello/puppet-crane)
 ####Table of Contents
 
 1. [Overview](#overview)
@@ -34,4 +36,3 @@ This module is designed to setup Crane on a Pulp master or node.
 ##Development
 
 See the CONTRIBUTING guide for steps on how to make a change and get it accepted upstream.
-
