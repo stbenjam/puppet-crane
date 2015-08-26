@@ -1,7 +1,7 @@
 # Configure Crane
 class crane::config {
   file { '/etc/crane.conf':
-    ensure  => file,
+    ensure  => 'file',
     mode    => '0644',
     owner   => 'root',
     group   => 'root',
