@@ -51,4 +51,21 @@ describe 'crane' do
         with_content(/^endpoint: localhost.localdomain:5001$/)
     end
   end
+
+  context 'with data dir ' do
+    let :pre_condition do
+      "class {'crane':
+        data_dir => 'foo'
+      }"
+    end
+
+    let :facts do
+      default_facts
+    end
+
+    it "should set the data_dir" do
+      should contain_file('/etc/crane.conf').
+        with_content(/^data_dir: foo$/)
+    end
+  end
 end
