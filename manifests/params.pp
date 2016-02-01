@@ -5,4 +5,5 @@ class crane::params {
   $key = undef
   $cert = undef
   $ca_cert = undef
+  $data_dir = '/var/lib/pulp/published/docker/v2/app/'
 }
